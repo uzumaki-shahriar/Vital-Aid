@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #7400b8;
+    height: 12vh;
+    width: 100vw;
+    margin-bottom: 2vh;
+}
+
+.container {
+    display: flex;
+    width: 70vw;
+    height: 70vh;
+    margin: 7vh 15vw;
+    align-items: center;
+}
+
+.sidesection {
+    display: inline-block;
+    width: 15vw;
+    height: 70vh;
+    background-color: rgb(248, 247, 244);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-right: 20px;
+}
+
+.mainsection {
+    display: inline-block;
+    width: 55vw;
+    height: 70vh;
+    background-color: rgb(248, 247, 244);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 400;
+}
+
+
+.profileicon img {
+    width: 13vw;
+    height: 26vh;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+.buttons {
+
+    font-size: 18px;
+    padding: 10px;
+    width: 15vw;
+    height: 5vh;
+    margin-top: 8vh;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 600;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.editProfilebutton {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.recentactivityButton {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+
+
+.buttons:hover {
+    background-color: #1afb8a;
+    cursor: pointer;
+    color: black;
+}
+
+.profiledetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.item {
+    padding: 5px;
+    text-align: center;
+    height: 22vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item .heading {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 22px;
+    font-weight: 500;
+    color: #5e60ce;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.item .maincontent {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    padding: 5px;
+    overflow: hidden;
+    overflow-wrap:anywhere;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 80vw;
+        height: 100vh;
+        margin: 3vh 10vw;
+    }
+
+    .sidesection {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        box-shadow: none;
+        margin: 1vh 0;
+        width: 80vw;
+        height: 12vh;
+    }
+
+    
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        padding: 5px;
+        width: 25vw;
+        height: 5vh;
+        text-align: center;
+    }
+
+    .editProfilebutton, .recentactivityButton{
+        margin: 0 10px;
+    }
+    .content{
+        flex-direction: row;
+        height: 12vh;
+        width: 80vw;
+    }
+
+
+
+    .profileicon img {
+        width: 20vw;
+        height: 9vh;
+        border-radius: 50%;
+        padding: 2px;
+        margin: 10px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .mainsection{
+        width: 80vw;
+        height: 88vh;
+    }
+
+    .profiledetails{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .item {
+        text-align: center;
+        padding: 0px;
+        margin: 10px;
+        text-align: center;
+        height: 12vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .item .heading {
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 14px;
+        font-weight: 500;
+        color: #5e60ce;
+        padding: 5px;
+        margin-bottom: 5px;
+        width: 25%;
+        text-align: left;
+        margin: 0;
+    }
+
+    .item .maincontent {
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 10px;
+        font-weight: 300;
+        color: #000000;
+        padding: 5px;
+        overflow: visible;
+        overflow-wrap:anywhere;
+        width: 70%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
